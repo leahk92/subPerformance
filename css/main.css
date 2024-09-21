@@ -1,0 +1,581 @@
+@charset "UTF-8";
+@import url("./reset.css");
+
+
+/* 레이아웃 */
+#wrap {
+    width: 100%;
+}
+#container {
+   width: 1280px;
+    margin: 0 auto;
+}
+
+/* 본문 */
+/* background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    width: 100%; height: 100%; */
+
+
+/* 메인비주얼 */
+#main_visual {
+    width: 100%;    background-color: #000001;
+
+}
+#main_visual .cover {
+     position: relative;
+}
+#main_visual .cover .pic {
+    background: url(../image/main_.png) no-repeat center;
+    height: 700px;
+}
+
+#main_visual .cont {
+    position: absolute;
+    color: #fff;
+    top:23%;
+    left: 5%;
+}
+#main_visual .cont .tit {
+    display: block;    
+    padding: 40px 0 50px 0;
+}
+#main_visual .cont .tit h1 { font-size: 60px;
+    font-family: 'cinzel';    
+    font-weight: 600;
+    letter-spacing: 0.15em;    line-height: 1.1em;
+    color: #fff; 
+}
+
+#main_visual .cont .date {
+    font-size: 33px; 
+    font-family:'cinzel';
+    font-weight: 500;}
+/* #main_visual .cont .ko {    color: #fff;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 25px; font-weight:300;
+    padding-bottom: 20px; 
+    letter-spacing: 0.5em;
+} */
+
+
+#main_visual .open {display: inline-block;
+    margin-top: 5%;}
+.open p {  color: rgb(255, 255, 255);
+    font-size: 29px;
+    font-family: 'Montserrat';
+    font-weight: 700;
+    padding: 15px 25px;
+    background-color: rgb(157, 37, 39);
+    letter-spacing: 0.03em;
+}
+
+
+
+/* 검색칸 */
+#search {width: 100%;
+    background: #000001;
+    overflow: hidden;
+border-top: 1px solid #3f3f3f;
+box-shadow: 5px 5px 7px 0 rgba(0, 0, 0, 0.2);
+}
+.searchBox {width: 100%;
+    padding: 65px 0px 65px 55px;
+    }
+.searchBox h2 {
+    font-size: 19px;
+    color: #fff;
+    font-weight: 400;
+    margin: 0 auto;
+    text-align: left;
+    float: left;
+    line-height: 40px;
+    padding-bottom: 13px;
+}
+.searchBox img {vertical-align: text-top; padding-right: 10px;}
+input, select, button, textarea {
+    vertical-align: middle;
+    border-radius: 0px 0px;
+}
+.searchBox .mainSearch {
+    overflow: hidden;
+}
+fieldset, iframe {
+    border: 0 none;
+}
+.searchBox .mainSearch input.datepicker {
+    width: 29%;
+    background: url('../image/main/ico_calendar.png') no-repeat 98% center;
+}
+.searchBox .mainSearch input.searching {
+    background: url('../image/main/searching.png') no-repeat 98% center;
+}
+input {
+    -webkit-writing-mode: horizontal-tb !important;
+    text-rendering: auto;
+    color: -internal-light-dark(black, white);
+    letter-spacing: normal;
+    word-spacing: normal;
+    text-transform: none;
+    text-indent: 0px;
+    text-shadow: none;
+    display: inline-block;
+    text-align: start;
+    appearance: textfield;
+    background-color: -internal-light-dark(rgb(255, 255, 255), rgb(59, 59, 59));
+    cursor: text; 
+    margin: 0em;
+    padding: 1px 2px;
+    font-size: 19px;     font-family: 'Noto Sans KR', sans-serif;
+font-weight: 100;
+}
+
+input[type="text"], input[type="password"], input[type="email"], input[type="number"], input[type="search"], input[type="tel"] {
+    height: auto;
+    padding: 9px 5px;
+}
+input[type="text"], input[type="password"], input[type="email"], input[type="number"], input[type="search"], input[type="tel"], textarea {
+    vertical-align: middle;
+    color: #fff;
+    background: none;
+}
+.searchBox .mainSearch input[type="text"]{
+    display: block;
+    float: left;
+    margin-left: 2.8%;
+    width: 33%;
+    padding: 26px 20px;
+    line-height: 40px;
+    height: 40px;
+
+    /* padding-bottom: 1rem; */
+    background-color: #1a1a1a;
+    border: 0;
+    /* border-bottom: 1px solid #e4e4e4; */
+    border-radius: 0;
+    outline: 0;
+
+}
+.searchBox .mainSearch input[type="submit"] {
+    display: block; float: left;
+    margin-left: 2.8%; width: 15%;
+    border: 1px solid #fff;
+    padding: 13px 0px; letter-spacing: 0.5em;
+    font-family: 'Montserrat';
+font-weight: 300; text-align:center;
+  color: #fff; font-size: 18px;
+
+}
+.searchBox .button {
+    background: #000001;
+    text-align: left;
+    text-indent: 10px;
+    height: auto;
+}
+
+input[type='submit'], input[type='button'], button, input[type='image'] {
+    border-radius: 0;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    cursor: pointer;
+    border: 0;
+}
+
+/* 왓츠온 */
+#what {width: 100%;
+    padding: 50px 1.5rem;    background: #fff;
+    margin-top: 60px;
+    }
+    
+#what .w_list {padding-bottom: 60px;
+    border-bottom: 1px solid #b2b2b2;
+    position: relative;
+}
+.w_list .title
+{margin-bottom: 50px;}
+.w_list .title h3 {
+    font-family:'Montserrat';
+    font-weight: 700;
+    font-size: 37px;
+    color:#1A1A1A; margin-bottom: 50px;
+    text-align: center;
+}
+
+#what .box {
+    display: flex;
+    box-sizing: border-box;
+}
+
+#what .box li {width: 230px;
+    display: inline-block;
+    position: relative;
+margin-right: 20px;}
+
+#what .box .slick-arrow.slick-prev {
+    background: url(../image/arrow_six_wh_Left.png) no-repeat 40% 50%;
+    left: 0%;
+    padding:18px 33px;
+    background-size: 32px;
+    background-color:#1A1A1A;
+}
+#what .box .slick-arrow {
+    position: absolute;
+    top: -95px;
+    text-indent: -9999px;
+    outline: none;
+}
+
+#what .box .slick-arrow.slick-next {
+    background: url('../image/arrow_six_wh.png') no-repeat  50% 40%;
+    right: 1%;
+    padding: 18px 33px;
+    background-size: 32px;
+    background-color: #1A1A1A;
+}
+
+/* #what .box .slick-slide {
+    margin-right: 30px;
+} */
+
+figure.hover_effect {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    background: #000000;
+     box-shadow: 0 0 5px rgba(12, 12, 12, 0.15);
+    border: none;
+  }
+  
+  figure.hover_effect  * {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-transition: all 0.45s ease-in-out;
+    transition: all 0.45s ease-in-out;
+  }
+  
+  figure.hover_effect img {
+    max-width: 100%;
+    position: relative;
+    opacity: 1;
+  }
+  
+figure.hover_effect:hover img,
+figure.hover_effect.hover img {
+    opacity: 0.5;
+    -webkit-transform: scale(1.15);
+    transform: scale(1.15);
+  }
+
+#what .box a {
+    outline: none;
+}
+
+#what .box em {
+    font-family: 'Montserrat'; 
+    font-weight: 500;
+    font-size: 16px;
+    margin-top: 25px;
+    display: block;
+    color: #6d6d6d;
+    letter-spacing: -0.05em;
+}
+#what .box p {
+    font-family: 'Noto Sans KR', sans-serif;
+    font-weight: 400;
+    font-size: 19px;
+    margin-top: 15px;
+    display: block;
+    line-height: 1.6;
+    letter-spacing: -0.05em;
+    color: #111;
+    text-align: left;
+    }
+    
+/* 시즌라인업 */
+#season {    width: 100%;
+   margin-top: 100px; margin-bottom: 100px;
+}
+
+.s_box {width: 100%;
+    display: flex;position: relative;
+ }
+.s_box .titname { width: 25%;
+}
+.s_box .titname .t_rec {position: absolute; top: 100px; left: 80px;
+    background: #fff; padding: 70px 100px 80px 0px;
+}
+
+.s_box .titname .headtxt {
+    font-size: 1.5em;
+    font-weight: 500;
+  
+    }
+.s_box .digit {width: 75%;}
+
+
+.s_box .t_rec .headtxt {
+    display: inline-block;
+    padding: 0px 2px 4px 2px;
+    border-bottom: 8px solid rgb(195, 48, 13);
+}
+
+    
+.titname .headLine {
+    font-size: 50px;
+    font-weight: 600;
+    font-family: 'Montserrat'; 
+    line-height: 1.2em;
+    letter-spacing: 0.05em;
+   padding: 60px 0px 20px 0;
+   color: #1A1A1A;
+}
+
+.titname .sub { font-size: 20px;
+    font-weight: 500;
+    font-family: 'Montserrat'; 
+    letter-spacing: 0.03em;
+}
+.titname .Line {padding-top: 20px;}
+
+a:-webkit-any-link {
+    color: -webkit-link;
+    cursor: pointer;
+}
+.eBhLyM {
+    height: 25px;
+    width: 100%;
+    /* display: inline-block; */
+}
+.eBuayz {
+    height: 100%;
+    width: 120px;
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    position: relative;
+    transition: width 1s ease 0s;
+}
+.khpWsc {
+    background-color:  #00203d;
+    height: 1px;
+    position: relative;
+    width: 100%;
+    right: 1px;
+}
+.eBuayz svg:last-child {
+    width: 25px;
+    height: 100%;
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    padding: 4px 0px 4px 15px;
+}
+
+.iCbSga {
+    width: 100%;
+    color:  #00203d;
+    /* z-index: 1;
+    min-height: 280px;
+    flex: 0 0 auto;
+    display: block; */
+    max-width: 450px;
+}
+.hqMvbG {
+    flex: 1 1 100%;
+    display: flex;
+    flex-direction: column;
+}
+.iCbSga:hover .ArrowDazzlerAnimate {
+    width: 100%;}
+
+
+/* 패밀리+아카데미 */
+#fam {    width: 100%;
+    
+    padding: 150px 0;
+    background: url('../image/fam_Aca.jpg') center top no-repeat fixed;
+    background-size: cover;
+    margin-top: 50px;}
+
+/* .inner_box {max-width: 1300px;
+    margin: 0 auto;}
+    .inner_box li {float: left;}
+.inner_box .tst {
+    padding: 50px 70px;
+    background: rgba(255, 255, 255, 0.5);} */
+
+
+
+/* 인포 */
+#info {    width: 100%;
+    margin: 150px 0; 
+}
+#info .info_inr {
+    width: 100%;
+    display: flex;
+}
+
+.info_inr .n_list {  width: 85%; 
+}
+.info_inr ul {display: flex;}
+.info_inr .n_list li {
+    width: 30%; height: 435px;
+    margin-left: 2%;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    border: 1px solid #dfdfdf;
+    position: relative;
+}
+
+.info_inr .notice {
+    width: 15%;
+    padding-top: 84px;
+}
+.info_inr .notice h4 {color: #1A1A1A;text-align: left;
+    font-family:'Montserrat';
+    font-weight: 700; font-size: 37px;
+    margin-top: 28px;
+}
+.info_inr .notice > div {
+    /* background: #00203d; border-radius: 50%;  */
+padding-top: 17px;}
+
+a:-webkit-any-link {
+    color: -webkit-link;
+    cursor: pointer;
+}
+.eBhLyM_ {
+    height: 25px;
+    width: 100%;
+    /* display: inline-block; */
+}
+.eBuayz_ {
+    height: 100%;
+    width: 70px;
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    position: relative;
+    transition: width 1s ease 0s;
+}
+.khpWsc_ {
+    background-color:  #00203d;
+    height: 1px;
+    position: relative;
+    width: 100%;
+    right: 1px;
+}
+.eBuayz_ svg:last-child {
+    width: 25px;
+    height: 100%;
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    padding: 4px 0px 4px 15px;
+}
+
+.iCbSga_ {
+    width: 100%;
+    color:  #00203d;
+    /* z-index: 1;
+    min-height: 280px;
+    flex: 0 0 auto;
+    display: block; */
+    max-width: 160px;
+    padding-top: 39px; padding-bottom:38px;
+}
+.hqMvbG_ {
+    flex: 1 1 100%;
+    display: flex;
+    flex-direction: column;
+}
+.iCbSga_:hover .ArrowDazzlerAnimate {
+    width: 100%;}
+#info .day {
+    padding-bottom: 20px;
+    display: flex;
+    align-items: center;
+    margin:43px 0px 10px 45px;
+
+}
+
+#info .day .a {
+    font-family: 'Montserrat';
+    font-size: 50px; font-weight: 600;
+    color: #111;
+    margin-right: 10px;
+}
+#info .day .b {
+    font-family: 'Arimo';
+    font-size: 20px; 
+    line-height: 1em;
+    color: #111;
+}
+
+#info .txt {
+    margin: 0 35px;
+}
+
+#info .txt .cont {
+    font-size: 24px;
+    font-family: 'Noto Sans KR';
+    position: relative;
+    padding-top:60px;
+    padding-left:15px;font-weight: 300;
+}
+.deco-bar:before {
+    content: '';
+    display: inline-block;
+    width: 200px;
+    height: 1px;
+    background: #000;
+    position: absolute;
+    top: 0px; left: 0;
+}
+#info .txt .cont p {
+  
+    color: #111;
+}
+#info .n_btn {
+position: absolute;
+bottom: 20px;
+right: 20px;
+
+}
+#info .n_btn:hover {}
+#info .n_btn img {
+    padding: 18px;background: #00203d;
+}
+
+/* #info .n_list li:last-child {width: 200px; border: none; background: #ebebeb; 
+}
+#info li .add {text-align: center; background: #ebebeb; 
+    padding: 40px 0;
+   }
+#info .add a {color: #111; font-size: 28px; font-family: 'Montserrat';
+    font-weight: 300;
+} */
+#info .more
+{ position: relative;}
+.under_bar:before {
+    content: '';
+    display: inline-block;
+    width: 120px;
+    height: 1px;
+    background: #111;
+    position: absolute;
+    top: 81px;
+    left: 43px;
+}
+
+/* 전경 사진 */
+.main_iconLnk {    width: 100%;
+    padding: 150px 0;
+    background: url('../image/main_visual.png') center top no-repeat fixed;
+    background-size: cover;
+    margin-top: 50px;
+}
+
+

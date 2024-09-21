@@ -1,0 +1,116 @@
+/* media query */
+
+/* 화면너비 1920px */
+@media screen and (max-width: 1920px) {
+}
+
+/* 화면너비 1680px */
+@media screen and (max-width: 1680px) {
+}
+
+/* 화면너비 1440px */
+@media screen and (max-width: 1440px) {
+  /* lg그램 */
+  /* 헤더 */
+  #check:checked ~ nav label .close-btn {
+    font-size: 37px;
+  }
+  #check:checked ~ nav .menu-bars .menu-bar > a {
+    font-size: 1.4rem;
+  }
+  #check:checked ~ nav .dropdown-menu > ul > li > a {
+    font-size: 1.1rem;
+  }
+  .menu-bars .menu-bar > a {
+    font-size: 1.2rem;
+    font-weight: 400;
+  }
+  nav .menu-bar .dropdown-menu {
+    width: 11em;
+  }
+  .dropdown-menu ul li a {
+    font-size: 1rem;
+  }
+
+  footer .addrArea address {
+    font-size: 0.91rem;
+  }
+  footer .addrArea {
+    gap: 2%;
+    padding: 4%;
+  }
+}
+
+/* 화면너비 1200px */
+@media screen and (max-width: 1200px) {
+  footer .addrArea .link {
+    display: none;
+  }
+  footer .info a {
+    vertical-align: baseline;
+  }
+}
+/* 태블릿 992px */
+@media screen and (max-width: 992px) {
+  nav .menu-bars {
+    display: none;
+  }
+  label {
+    font-size: 1.4rem;
+  }
+  .menu-bars .menu-bar > a {
+    font-size: 1.1rem;
+  }
+  nav img {
+    width: 30px;
+  }
+  .lang a {
+    font-size: 0.8rem;
+  }
+  #check:checked ~ nav .menu-bars {
+    flex-direction: column;
+  }
+  #check:checked ~ nav .menu-bars .menu-bar {
+    width: 100%;
+  }
+  #check:checked ~ nav .dropdown-menu {
+    display: none;
+  }
+
+  footer .info a {
+    font-size: 0.8rem;
+  }
+  footer .addrArea address {
+    font-size: 0.8rem;
+  }
+  footer .ft-container > p {
+    font-size: 13.5px;
+    margin: 0 25px;
+  }
+}
+
+/* 화면너비 768px */
+@media screen and (max-width: 768px) {
+}
+
+/* 모바일 600px */
+@media screen and (max-width: 600px) {
+  .logo > a {
+    width: 10rem;
+  }
+}
+
+/* 화면너비 425px */
+@media screen and (max-width: 425px) {
+  footer .addrArea {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  footer .addrArea .logo-footer {
+    margin: 5% 0;
+  }
+}
+
+/* 화면너비 0~320px */
+@media screen and (max-width: 320px) {
+}
