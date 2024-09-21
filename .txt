@@ -1,0 +1,79 @@
+
+   .overviewNavi {
+      padding: 1.375em 4.375em;
+      margin-top: 2.125em;
+   }
+   .overview-tabs button {
+      font-size: 1.45rem;
+      margin-right: 25px;
+   }
+   .overview-filters button {
+      font-size: 1.2rem;
+   }
+
+   .monthNavi > h2 {
+      font-size: 1.6rem;
+   }
+   .month-tabs li button {
+      font-size: 1.05rem;
+      padding: 1.4em 1.45em;
+   }
+   .monthNavi .arr img {
+      width: 18px;
+   }
+   .pdContent .poster {
+      width: 310px;
+   }
+   .pdContent .poster img {
+      width: 100%;
+      height: 450px;
+   }
+   .pdContent .poster > div {
+      width: 310px;
+      font-weight: 300;
+      background: #000;
+      opacity: 0.8;
+      text-align: center;
+   }
+   .poster > div > p:nth-child(2) {
+      font-size: 1.3rem;
+      font-weight: 400;
+      /* padding: 5px 0 50px; */
+   }
+
+   .calContent > a {
+      padding: 1.5em 9em;
+   }
+   .calContent .date p {
+      font-size: 1.2rem;
+   }
+   .calContent .date p:first-child {
+      width: 43%;
+   }
+
+   .calContent .playttl > p {
+      font-size: 1.25rem;
+   }
+   .calContent .book-btn img {
+      width: 36px;
+   }
+   .day-list > a {
+      padding: 1.4em 10em;
+   }
+   .day-list .date p:first-child {
+      width: 45%;
+   }
+   .service {
+      margin: 5.3em auto;
+   }
+
+   #notice .notice-container {
+      padding: 4.875em 6.375em;
+   }
+   .n-text .n-title {
+      font-size: 1.27rem;
+   }
+
+   footer .addrArea address {
+      margin-right: 6.5em;
+   }
