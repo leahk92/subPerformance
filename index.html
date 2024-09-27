@@ -16,20 +16,22 @@
 
   <body>
     <!-- 헤더 -->
-    <header>
-      <h1 class="logo">
-        <a href="#"
-          ><img src="./image/Asset_logo.png" title="드림씨어터 로고"
-        /></a>
-      </h1>
-      <input type="checkbox" id="check" />
+    <header id="hd">
+      <div class="hd_top">
+        <h1 class="logo">
+          <a href="#"
+            ><img src="./image/Asset_logo.png" title="드림씨어터 로고"
+          /></a>
+        </h1>
+      </div>
       <!-- 내비 -->
-      <nav style="padding: 1.3em 0; width: 90%; margin: 0 auto">
-        <!-- 메뉴 -->
+      <input type="checkbox" id="check" />
+      <nav id="nav-menu">
         <label for="check">
           <i class="fas fa-bars menu-btn"></i>
           <i class="fas fa-times close-btn"></i>
         </label>
+        <!-- 메뉴 -->
         <ul class="menu-bars">
           <li class="menu-bar">
             <a href="#">드림씨어터</a>
@@ -88,7 +90,7 @@
         </ul>
         <!-- 아이콘 바 -->
         <ul class="icon-bar">
-          <li class="lang"><a href="">ENG</a></li>
+          <li class="lang"><a href="#">ENG</a></li>
           <li class="login">
             <a href="#"><img src="./image/user-white.png" title="로그인" /></a>
           </li>
@@ -99,9 +101,7 @@
       </nav>
       <!-- //내비 -->
     </header>
-
     <!-- //헤더 -->
-
     <!-- 본문 -->
     <!-- 상단메뉴 -->
     <section id="top">
@@ -300,11 +300,7 @@
     </footer>
 
     <!-- 스크립트 -->
-    <script src="./js/jquery-1.11.2.min.js"></script>
-    <script src="./js/main_slick.js"></script>
-    <script src="./js/jquery.bxslider.min.js"></script>
-    <script src="./js/script.js"></script>
-    <script src="./js/classie.js"></script>
-    <script src="./js/modernizr.custom.js"></script>
+    <!-- <script src="./js/jquery-1.11.2.min.js"></script> -->
+    <script src="./js/headerSlide.js"></script>
   </body>
 </html>

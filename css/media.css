@@ -10,7 +10,6 @@
 
 /* 화면너비 1440px */
 @media screen and (max-width: 1440px) {
-  /* lg그램 */
   /* 헤더 */
   #check:checked ~ nav label .close-btn {
     font-size: 37px;
@@ -91,17 +90,30 @@
 
 /* 화면너비 768px */
 @media screen and (max-width: 768px) {
+  .logo img {
+    width: 180px;
+  }
 }
 
 /* 모바일 600px */
 @media screen and (max-width: 600px) {
-  .logo > a {
-    width: 10rem;
+  #landing-wrap {
+    height: 70vh;
+  }
+  nav {
+    padding: 1rem 2rem;
   }
 }
 
-/* 화면너비 425px */
-@media screen and (max-width: 425px) {
+/* 화면너비 480px */
+@media screen and (max-width: 480px) {
+  .logo img {
+    width: 160px;
+  }
+  nav {
+    padding: 1rem 1.5rem;
+  }
+
   footer .addrArea {
     flex-direction: column;
     align-items: flex-start;

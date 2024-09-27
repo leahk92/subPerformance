@@ -24,11 +24,6 @@ header {
   z-index: 3;
   display: none;
 }
-/* @media (max-width: 960px) */
-/* header nav {
-   display: none;
- } */
-
 label .close-btn {
   display: none;
 }
@@ -80,26 +75,53 @@ label {
   color: #fff;
 }
 
-/* 헤더 > 로고 */
-.logo {
+/* 헤더 */
+#hd {
+  z-index: 10;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+#nav-menu.slidedown {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.95);
+  animation: slidedown 0.4s forwards;
+}
+@keyframes slidedown {
+  form {
+    top: -250px;
+  }
+  to {
+    top: 0;
+    box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.2);
+  }
+}
+#hd .hd_top {
+  width: 100%;
+
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 1.5rem 0;
   border-bottom: 1px solid #ffffff20;
 }
-.logo > a {
-  display: inline-flex;
-  width: 12rem;
+/* 헤더 > 로고 */
+.logo {
+  padding: 25px 0;
 }
+
 .logo img {
-  width: 100%;
+  display: block;
+  width: 200px;
 }
 /* 헤더 > 내비 */
 nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding: 0.65rem 3rem !important;
 }
 nav img {
   width: 33px;
@@ -123,6 +145,7 @@ nav .menu-bars {
   font-weight: 400;
   padding-bottom: 2em;
 }
+
 nav .menu-bar .dropdown-menu {
   width: 15em;
   display: none;
@@ -160,6 +183,9 @@ nav .menu-bars .menu-bar:hover .dropdown-menu {
 .icon-bar li {
   padding: 0 10px;
 }
+.icon-bar li:last-child {
+  padding-right: 0;
+}
 .lang {
   border-radius: 1.5rem;
   border: 1px solid rgba(255, 255, 255, 0.2);
@@ -179,7 +205,8 @@ nav .menu-bars .menu-bar:hover .dropdown-menu {
 #top {
   display: flex;
   flex-direction: column;
-  margin: 5%;
+  padding: 0 5%;
+  margin-top: 230px;
 }
 #top .main-menu {
   font-family: "Montserrat", sans-serif;
@@ -256,7 +283,7 @@ nav .menu-bars .menu-bar:hover .dropdown-menu {
 
 /* 공연리스트 */
 #play-list {
-  margin: 10% 0;
+  margin: 8% 0;
 }
 #play-list ul {
   width: 90%;
